@@ -1,0 +1,17 @@
+#courses{
+    .dec{
+        right: 0px;
+        top: 62px;
+        width: 28%;
+    }
+    @media(max-width:1199px){
+        .dec{
+            top: calc(100% - 140px);
+        }
+    }
+    @media(max-width:991px){
+        .dec{
+            top: 100%;
+        }
+    }
+}

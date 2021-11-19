@@ -1,0 +1,38 @@
+@charset 'utf-8';
+@import 'plugins/bootstrap/bootstrap.scss'; 
+@import 'plugins/swiper/swiper.scss';
+@import 'font/css/fontello.css'; 
+@import 'scss/plugins/mCustomScrollbar.css'; 
+@import 'scss/plugins/sweetalert2.css'; 
+@import 'scss/plugins/jquery-ui.css'; 
+@import 'scss/plugins/bootstrap-select.min.css'; 
+// config
+@import 'config/_config.scss';
+@import 'config/_fontSize.scss'; 
+// // layouts 
+@import 'layouts/_reset.scss'; 
+
+@import 'layouts/_common.scss'; 
+@import 'layouts/_layouts.scss';
+@import 'layouts/_keyframes.scss';   
+
+ @font-face {
+    font-family:"DFPZongYiBold-B5";
+    src:url("DFPZongYiBold-B5.ttf");
+}
+
+// pages
+
+@import 'layouts/pages/_index.scss';  
+@import 'layouts/pages/_about.scss';  
+@import 'layouts/pages/_register.scss';  
+@import 'layouts/pages/_order.scss';  
+@import 'layouts/pages/_coupon.scss';  
+@import 'layouts/pages/_search.scss';  
+@import 'layouts/pages/_course-lecturer.scss';  
+@import 'layouts/pages/_projects.scss';  
+@import 'layouts/pages/_courses.scss';  
+@import 'layouts/pages/_course.scss';  
+@import 'layouts/pages/_contact.scss';  
+@import 'layouts/pages/_lecturer-profit.scss';  
+@import 'layouts/pages/_editor.scss';   

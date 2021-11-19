@@ -1,0 +1,190 @@
+
+
+
+//72 70 60 56 50 42 40 38 36 32 30 28 26 24 22 20 19 18 16 15 14 12
+.fz-72{
+  @include fz(72px); 
+} 
+.fz-70{
+  @include fz(70px); 
+} 
+.fz-60{
+  @include fz(60px); 
+}
+.fz-56{
+  @include fz(56px);
+}
+.fz-50{
+  @include fz(50px);
+}
+.fz-42{
+  @include fz(42px);
+}
+.fz-40{
+  @include fz(40px);
+}
+.fz-38{
+  @include fz(38px);
+}
+.fz-36{
+  @include fz(36px);
+}
+.fz-32{
+  @include fz(32px);
+}
+.fz-30{
+  @include fz(30px);
+}
+.fz-28{
+  @include fz(28px);
+}
+.fz-26{
+  @include fz(26px);
+}
+.fz-24{
+  @include fz(24px);
+}
+.fz-22{
+  @include fz(22px);
+}
+.fz-20{
+  @include fz(20px);
+}
+.fz-19{
+  @include fz(19px);
+}
+.font-16{
+  @include fz(16px);
+}
+.font-15{
+  @include fz(15px);
+}
+.font-14{
+  @include fz(14px);
+}
+.fz-18{
+  @include fz(18px);
+}
+.fz-16{
+  @include fz(16px);
+}
+.fz-15{
+  @include fz(15px);
+}
+.fz-14{
+  @include fz(14px);
+}
+.fz-13{
+  @include fz(13px);
+}
+.fz-12 {
+  @include fz(12px);
+}
+
+
+@media (max-width: 1399px){
+  .fz-72{
+    @include fz(60px); 
+  }
+}
+@media (max-width: 1199px){
+
+  .fz-60{
+    @include fz(50px); 
+  }
+  .fz-56{
+    @include fz(48px);
+  }
+  .font-46{
+    @include fz(40px);
+  }
+  .fz-42{
+    @include fz(38px);
+  }
+  .font-38 {
+    @include fz(34px); 
+  }
+
+  .fz-32{
+    @include fz(28px);
+  }
+}
+@media (max-width: 991px){
+  .fz-72{
+    @include fz(55px); 
+  }
+  .fz-70{
+    @include fz(55px);
+  }
+  .fz-56{
+    @include fz(46px);
+  }
+  .fz-50{
+    @include fz(46px);
+  }
+  .fz-26{
+    @include fz(22px);
+  }
+}
+@media (max-width: 767px){
+  .fz-72{
+    @include fz(32px); 
+  }
+  .fz-70{
+    @include fz(50px);
+  }
+  .fz-60{
+    @include fz(34px); 
+  }
+  .fz-56{
+    @include fz(30px);
+  }
+  .fz-50{
+    @include fz(32px);
+  }
+  .font-72{
+    @include fz(40px);
+  } 
+  .font-64{
+    @include fz(40px);
+  }   
+  .font-46{
+    @include fz(30px);
+  }
+  .fz-42{
+    @include fz(28px);
+  }
+  .font-38{
+    @include fz(24px); 
+  }
+  .font-36 {
+    @include fz(24px);
+  }
+  .font-34 {
+    @include fz(28px);
+  }
+  .fz-36{
+    @include fz(26px);
+  } 
+  .fz-32{
+    @include fz(24px);
+  }
+  .fz-28{
+    @include fz(24px);
+  }
+ .fz-24{
+    @include fz(20px);
+  }
+  .fz-22{
+    @include fz(18px);
+  }
+  .fz-20 {
+    @include fz(16px);
+  }
+  .fz-18{
+    @include fz(16px);
+  }
+}
+@media (max-width: 575px){
+
+}

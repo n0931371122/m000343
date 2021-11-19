@@ -1,0 +1,25 @@
+#lecturer-profit{
+    .select-element.style-1 .bootstrap-select{
+        max-width: 474px;
+        .dropdown-menu li a span.text{
+            max-width: 440px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+    @media(max-width:767px){
+        .select-element.style-1 .bootstrap-select{
+            width: 100% !important;
+            > .dropdown-menu{
+                width: 100%;  
+            }
+            .dropdown-toggle .filter-option{
+                padding-right: 10px;
+            }
+            .dropdown-menu li a span.text{
+                max-width: calc(100% - 34px);
+            }
+        }
+    }
+}

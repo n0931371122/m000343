@@ -1,0 +1,277 @@
+
+
+@mixin fz($size) {
+  font-size: $size;
+}
+@mixin width($px1,$px2) {
+  width:$px1;
+  @if $px2!=""{
+    @media(max-width:767px){
+      width:$px2;
+    }
+  }
+}
+@mixin height($px1,$px2) {
+  height:$px1;
+  @if $px2!=""{
+    @media(max-width:767px){
+      height:$px2;
+    }
+  }
+}
+@mixin maxWidth($width) {
+  max-width:$width;
+}
+@mixin borderRadius($px) {
+  border-radius: $px;
+}
+@mixin z-index($num) {
+  z-index: $num;
+}
+@mixin letterSpacing($px) {
+  letter-spacing: $px;
+}
+@mixin lineHeight($num) {
+  line-height: $num;
+}
+@mixin textHoverColor($color) {
+  transition: all .3s;
+  &:hover{
+    color:$color !important;
+  }
+}
+@mixin bgHoverColor($color) {
+  transition: all .3s;
+  &:hover{
+    background:$color !important;
+  }
+}
+
+//字型 相關
+.NotoSansTC{
+  font-family: "Noto Sans TC";
+}
+.DFPZongYiBold-B5{
+  font-family: "DFPZongYiBold-B5";
+}
+
+
+//line-height
+.lh-195{@include lineHeight(1.95)}
+.lh-18{@include lineHeight(1.8)}
+.lh-165{@include lineHeight(1.65)}
+.lh-145{@include lineHeight(1.45)}
+.lh-13{@include lineHeight(1.3)}
+.lh-115{@include lineHeight(1.15)}
+.lh-075{@include lineHeight(0.75)}
+//max-width
+.max1600{@include maxWidth(1600px)}
+.max1500{@include maxWidth(1500px)} 
+.max1400{@include maxWidth(1400px)}
+.max1306{@include maxWidth(1306px)}
+.max1300{@include maxWidth(1300px)}
+.max1200{@include maxWidth(1200px)}
+.max1010{@include maxWidth(1010px)}
+.max970{@include maxWidth(970px)}
+.max800{@include maxWidth(800px)} 
+.max680{@include maxWidth(680px)}
+.max600{@include maxWidth(600px)}
+.max530{@include maxWidth(530px)}
+.max520{@include maxWidth(520px);} 
+.max230{@include maxWidth(230px);} 
+//z-index
+.z-1{@include z-index(1)}
+.z-2{@include z-index(2)}
+.z-3{@include z-index(3)}
+//bg
+.bg-hover-middleBlue{@include bgHoverColor($middleBlue)}
+.bg-hover-primary{@include bgHoverColor($primary)}
+.bg-hover-lightBlue{@include bgHoverColor($lightBlue)}
+.bg-hover-lightRed{@include bgHoverColor($lightRed)}
+//color
+.text-hover-primary{@include textHoverColor($blue);}
+.text-hover-lightBlue{@include textHoverColor($lightBlue);}
+.text-hover-white{@include textHoverColor(white);}
+//rounded
+.rounded-5{@include borderRadius(5px)} 
+.rounded-10{@include borderRadius(10px)}
+.rounded-15{@include borderRadius(15px)}
+.rounded-25{@include borderRadius(25px)}
+.rounded-30{@include borderRadius(30px)}
+//letter-spaceing
+.les-1{@include letterSpacing(-1px)}
+.les05{@include letterSpacing(0.5px)}
+.les1{@include letterSpacing(1px)}
+.les2{@include letterSpacing(2px)}
+.les8{@include letterSpacing(8px)}
+
+.w0{@include width(0px,"")}
+.w18{@include width(18px,"")}
+.w30{@include width(30px,"")}
+.w36{@include width(36px,"")}
+.w40{@include width(40px,30px)}
+.w42{@include width(42px,"")}
+.w48{@include width(48px,"")}
+.w50{@include width(50px,45px)}
+.w54{@include width(54px,54px)}
+.w70{@include width(70px,"")}
+.w80{@include width(80px,"")}
+.w90{@include width(90px,70px)}
+.w115{@include width(115px,"")}
+.w120{@include width(120px,"")}
+.w130{@include width(130px,"")}
+.w150{@include width(150px,140px)}
+.w180{@include width(180px,150px)}
+.w200{@include width(200px,"")}
+.w270{@include width(270px,"")}
+
+.h18{@include height(18px,"")}
+.h30{@include height(30px,"")}
+.h36{@include height(36px,"")}
+.h40{@include height(40px,30px)}
+.h42{@include height(42px,"")} 
+.h48{@include height(48px,"")}
+.h50{@include height(50px,45px)}
+.h54{@include height(54px,"")}
+.h60{@include height(60px,"")}
+.h70{@include height(70px,"")}
+.h80{@include height(80px,"")}
+.border-left-md-E5E5E5{
+  @media(min-width:768px){
+    border-left:1px solid #E5E5E5;
+  }
+
+}
+.border-top-E5E5E5{
+  border-top:1px solid #E5E5E5;
+}
+.border-bottom-E5E5E5{
+  border-bottom:1px solid #E5E5E5;
+}
+.border-bottom-C4D2F3{
+  border-bottom:1px solid #C4D2F3;
+}
+
+//position 相關 
+.absolute-center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.position-lg-absolute{
+  @media(min-width:992px){
+    position: absolute !important;
+  }
+}
+
+
+.cursor{
+  cursor: pointer;
+}
+.point-event-none{
+  pointer-events: none;
+}
+
+
+.line1{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.line2{
+  display: -webkit-box;
+  -webkit-line-clamp: 2; 
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.line3{
+  display: -webkit-box;
+  -webkit-line-clamp: 3; 
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.ns{
+	list-style: none;
+}
+.swiper-button{
+  margin: 0;
+  outline:none;
+}
+.swiper-pagination-bullet{
+  opacity: 1;
+}
+.background-cover{
+  background-size: cover;
+  background-position: center;
+}
+.fw-500{
+  font-weight: 500;
+}
+.fw-600{
+  font-weight: 600;
+}
+.fw-900{
+  font-weight: 900;
+}
+.opacity05{
+  opacity: 0.5;
+}
+.opacity0{
+  opacity: 0;
+}
+
+.box-shadow{
+  box-shadow: 0 0 70px rgba(0,0,0,0.06);
+}
+.border-dashed-bottom-E3E3E3{
+  border-bottom: 1px dashed #E3E3E3;
+}
+.border-dashed-top-E3E3E3{
+  border-top: 1px dashed #E3E3E3;
+}
+.row{
+  &.g-18{
+    margin-left: -18px;
+    margin-right: -18px;
+    [class^=col]{
+      padding-right: 18px;
+      padding-left: 18px;
+    }
+    @media(max-width:1199px){
+      margin-left: -12px;
+      margin-right: -12px;
+      [class^=col]{
+        padding-right: 12px;
+        padding-left: 12px;
+      }
+    }
+  }
+}
+.word-break-break-all{
+  word-break: break-all;
+}
+.background-attachment-fixed{
+  background-attachment: fixed;
+}
+.background-contain{
+  background-size: contain !important;
+}
+
+.text-hover-opacity1{
+  transition: all .3s;
+  &:hover{
+    opacity: 1;
+  }
+}

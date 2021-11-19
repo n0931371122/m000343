@@ -1,0 +1,40 @@
+#order{
+    .steps{
+        .step{
+            flex:0 0 220px;
+        }
+        .circle{
+            width: 54px;
+            height: 54px; 
+        }
+    }
+    .space-1{
+        width: 160px;   
+        text-align: left;
+    }
+    .space-2{
+        width: 142px;
+    }
+    @media(max-width:767px){
+        .steps{
+            .step{
+                flex:0 0 180px;
+            }
+        }
+    }
+    @media(max-width:575px){
+        .steps{     
+            .icon-step-arrow-1,
+            .icon-step-arrow-2{
+                &:before{
+                    transform: rotate(90deg);
+                }
+                
+            }
+        }
+        .space-1,
+        .space-2{
+            width: auto;
+        }
+    }
+}

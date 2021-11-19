@@ -1,0 +1,77 @@
+#projects{
+    .breadcrumb-element .breadcrumb-item.active{
+        color:white;
+    }
+    .banner{
+        height: 300px;
+    }
+
+    .project-section{
+        .project-box{
+            margin-top: -227px;
+            box-shadow:0 10px 20px rgba(39,63,197,0.2) ;
+        }
+    }
+    .detail-section{
+        .plan-box{
+            .item{
+                box-shadow: 0 0 42px rgba(58,104,216,0.15);
+                .title{
+                    &::after{
+                        content:"";
+                        display: block;
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        width: 100%;
+                        height: 2px;
+                        background-image: url(images/projects/dec-line.png);
+                    }
+                }
+            }
+            .scrollbarY{
+                height: 225px;
+                &::after{
+                    content:"";
+                    display: block;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    height: 50px;
+                    width: 100%;
+                    background: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,1));
+                }
+                .mCSB_scrollTools{
+                    z-index: 1;
+                    width: 6px;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    .mCSB_draggerContainer{
+                        background:#D5D5D5 ;
+                    }
+                    
+                }
+                .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+                    background: #F3C640;
+                    opacity: 1;
+                    width: 6px;
+                }
+            }
+        }
+    }
+    @media(max-width:991px){
+        .detail-section{
+            .plan-box .scrollbarY{ 
+                height: auto;
+                &::after{
+                    display: none;
+                }
+            }
+        }
+    }
+    @media(max-width:767px){
+        .banner{
+            height: 279px;
+        }
+    }
+}

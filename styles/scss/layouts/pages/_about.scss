@@ -1,0 +1,191 @@
+#about{
+    .title-section{
+        background-repeat: no-repeat;
+        background-position:top center;
+        .breadcrumb-element .breadcrumb-item{
+            a{
+                color:white; 
+            }
+            &:last-child{
+                color:white;
+            }
+            &+.breadcrumb-item::before{
+                background: white;
+            }
+        }
+        .planet-1{
+            top: 120px;
+            left: 22%;
+            width: 7%;
+        }
+        .planet-2{
+            top: 345px;
+            left: -1.5%;
+            width: 10%;
+        }
+        .planet-3{
+            top: 331px;
+            left: 9.5%;
+            width: 13.2%;
+        }
+        .planet-4{
+            top: -90px;
+            left: 70%;
+            width: 22%;
+        }
+        .planet-5{
+            top: 755px;
+            left: 80%;
+            width: 9%;
+        }
+        .star{
+            width: 1.5%;
+        }
+        .star-1{
+            top: 220px;
+            left: 7%;
+        }
+        .star-2{
+            top: 354px;
+            left: 22%;
+        }
+        .star-3{
+            top: 640px;
+            left: 10%; 
+        }
+        .block{
+            top: 870px;
+            right: 33%;
+            width: 9%;
+        }
+    }
+    .content-section{
+        .content-dec-circle-1{
+            top: -200px;
+            left: 0;
+            width: 17%;  
+        }
+        .content-dec-circle-2{
+            top: 1800px;
+            right: 0;
+            width: 49.5%;  
+        }
+        .content-dec-1{
+            top: -120px;
+            right: 0;
+            width: 45%;
+        }
+        .content-dec-2{
+            top: 520px;
+            left: 0;
+            width: 45%;
+        }
+        .feature-block{
+            .feature-box{
+                border-top-width: 10px;
+                border-top-style: solid;
+                border-radius: 0 0 20px 20px;
+                box-shadow: 13px 13px 26px rgba(0,0,0,0.04);
+                .img-inner{
+                    width: 160px;
+                    height: 160px;
+                }
+            }
+
+        }
+    }
+    .effect-img-box{
+        right: -93px;
+        .img-inner{
+            mask: url(images/about/2-mask.png) no-repeat center center;
+            mask-size: contain;
+            .img{
+                height:604px;
+            }
+        }
+        .dec-2-1{
+            animation: rotate1 5s linear 0s infinite alternate ;
+        }
+        .dec-2-2{
+            animation: rotate2 5s linear 0s infinite alternate ;
+        }
+    }
+    @media(max-width:1600px){
+        .effect-img-box{
+            right: 0; 
+        }
+    }
+    @media(max-width:1199px){
+        .title-section{
+            .planet-3{
+                left: 82%;
+                top: 360px;
+            }
+            .planet-4{
+                top: 0;
+            }
+            .planet-5{
+               left: 3%;
+            }
+            .star-2{
+               top: 440px;
+            }
+            .star-3{
+                left: 92%;
+            }
+        }
+        .content-section .content-dec-1{
+            top: 100px;
+        }
+        .effect-img-box .img-inner .img{
+            height: 500px;
+        }      
+    }
+    @media(max-width:991px){
+        .content-section{
+            .content-dec-circle-1{
+                display: none;
+            }
+            .feature-block .feature-box{
+                max-width: 300px;
+            }
+        }
+        .effect-img-box{
+            max-width: 400px;
+            .img-inner .img{
+                height: 400px;
+            }
+        }
+    }
+    @media(max-width:767px){
+        .content-section .feature-block .feature-box{
+            max-width: 300px;
+            .img-inner{
+                width: 100px;
+                height: 100px;
+                img{
+                    max-width: 100%  !important;
+                }
+            }
+
+        }
+        .effect-img-box{
+            max-width: 300px;
+            .img-inner .img{
+                height: 300px;
+            }
+            
+        }
+        .title-section{
+            .planet-5{
+                top: 600px;
+            }
+            .star-2{
+                top: 350px;
+            }
+            .star-3{
+                top: 600px;
+            }
+        }
+    }
+}

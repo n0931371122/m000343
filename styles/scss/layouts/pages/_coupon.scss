@@ -1,0 +1,29 @@
+#coupon{
+    .title{
+        height: 160px;
+        flex:0 0 240px;
+        mask: url(images/member/orders/coupon-name.png) no-repeat center center;
+        mask-size: contain;
+        .border{
+            border:1px solid white;
+            width: calc(100% - 18px);
+            height:calc(100% - 18px)
+        }
+    }
+    @media(max-width:1199px){
+        .title{
+            height: 133px;
+            flex:0 0 200px;
+        }
+    }
+    @media(max-width:767px){
+        .title{
+            mask:none;
+            border-radius: 5px;
+        }
+        .content{
+            background: transparent !important;
+        }
+    }
+}
+    

@@ -1,0 +1,195 @@
+#course{
+    .notifications{
+        a{
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            &:hover{
+                .date-inner{
+                    .bg-grayF2{
+                        background:#0061A5 !important;
+                        color:white !important;
+                    }
+                }
+                .text-inner{
+                    .fz-20{
+                        color:$primary;
+                    }
+                }
+            }
+            .date-inner{
+                width: 154px;
+                .bg-grayF2{
+                    width: 80px;
+                    height: 80px;
+                    transition: all .3s;
+                }
+            }
+            .img-inner{
+                width: 220px;
+                .jqimgFill{
+                    height: 154px;
+                    width: 220px;
+                }
+            }
+            .text-inner{
+                .fz-20{
+                    transition: color .3s;
+                }
+            }
+        }
+
+    }
+    .download{
+        ul{
+            li{
+                ul{
+                    li{
+                        a{
+                            padding-top: 10px;
+                            padding-bottom: 10px;
+                            position: relative;
+                            &::after{
+                                content: "";
+                                display: block;
+                                position: absolute;
+                                left: 0;
+                                bottom: 0;
+                                width: 100%; 
+                                height: 2px;
+                                background-image: linear-gradient(to right, #E5E5E5 0%, #E5E5E5 10%, transparent 10%, transparent 20%);
+                                background-size: 6px;
+                            }
+                            &:hover{
+                                color:$primary; 
+                                .fileType{
+                                    color:$blue459BFB;
+                                }
+                                .download{
+                                    background: $blue459BFB !important;
+                                }
+                            }
+                            .download{
+                                transition: all .3s;
+                            }
+                        }
+                        .fileType{
+                            flex:0 0 120px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .lecturer{
+        &::after{
+            content:"";
+            display: block;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            width: 1px;
+            height: 100%;
+            background: linear-gradient(white 0%,white 10%,transparent 10%,transparent 20%);
+            background-size: 6px 6px;
+            background-repeat: repeat-y;
+        }
+    }
+    .favoriteToggle{
+        &.active{
+            background: $lightRed !important;
+            color:white !important;
+        }
+        &:hover{
+            i:before{
+                transform: scale(1.1);
+            }
+        }
+        i:before{
+            transition: all .3s;
+        }
+    }
+    .listsItem .listItem{
+        &.active{
+            .messageTitle{
+                padding: 30px 0 18px 0;
+            }        
+        }
+        .messageTitle{
+            padding: 30px 0 34px 0;
+            transition: all .3s;
+        }
+        .td.ask{
+            flex:0 0 300px;
+        }
+        
+    }
+    @media(max-width:1199px){
+        .share-element{
+            .share-toggle{
+                pointer-events: none;
+            }
+            .share-content{
+                display: block;
+                top: 0;
+                left: 60px; 
+            }
+        }
+        .notifications a .date-inner{
+            width: auto;
+        }
+        .listsItem .listItem .td.ask{
+            flex:0 0 220px;
+        }
+    }
+    @media(max-width:767px){
+        .course-info{
+            .title{
+                width: 80px;
+            }
+        }
+        .w50.h50{
+            width: 40px;
+            height: 40px;
+        }
+        .share-element .share-content{
+            left: 50px;
+        }
+        .notifications a{
+            .date-inner{
+                .bg-grayF2{
+                    background-color: transparent;
+                }
+            }
+            .img-inner{
+                width: 100%;
+                max-width: 500px;
+                .jqimgFill{
+                    width: auto;
+                    height: auto;
+                    background-image:none !important;
+                    img{
+                        display: block !important;
+                        width: 100%;
+                    }
+                }
+            }
+            .text-inner{
+                width: 100%;
+                .lh-165{
+                    line-height: normal;
+                }
+            }
+        }
+        .download ul li ul li .fileType{
+            flex:0 0 50px; 
+        }
+        .w130{
+            width: 45px;
+        }
+        .w200{
+            width: 180px;
+        }
+    }
+}
+
+

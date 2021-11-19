@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 17 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-740,-679)">
+        <g transform="matrix(1,0,0,1,0,-805)">
+            <g id="message-circle-Feather" transform="matrix(0.0250008,0,0,0.0250008,738.4,1482.4)">
+                <path d="M704,367.904L703.936,350.144C699.584,275.328 668.32,207.392 619.392,156.512C568.128,103.168 497.344,68.448 417.76,64.064L400.352,64C355.392,63.488 308.128,73.92 263.904,96.256C224.768,116.128 190.592,143.872 163.456,177.376C121.152,229.664 96.032,295.936 96,367.648C95.552,408.448 104.096,451.168 122.368,491.712L65.664,661.856C63.552,668.128 63.36,675.232 65.664,682.08C71.264,698.848 89.376,707.904 106.144,702.304L276.192,645.632C313.312,662.496 355.68,672.064 400.224,671.968C444.128,671.68 487.072,662.112 526.336,644.256C587.52,616.384 639.616,568.32 671.648,504.256C692.256,464.288 704.128,417.376 704,367.904Z" style="fill:rgb(178,178,178);"/>
+            </g>
+        </g>
+    </g>
+</svg>

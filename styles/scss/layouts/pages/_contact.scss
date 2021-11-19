@@ -1,0 +1,19 @@
+#contact{
+    .dec{
+        bottom: -61px;
+        right: -7.3%;
+        width: 12%;
+    }
+    @media(max-width:1599px){
+        .dec{
+            bottom: -61px;
+            right: 24px;
+            width: 12%;
+        }
+    }
+    @media(max-width:1199px){
+        .dec{
+            bottom: 0px;
+        }
+    }
+}

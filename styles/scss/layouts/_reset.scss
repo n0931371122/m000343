@@ -1,0 +1,67 @@
+body{
+	font-family: "Titillium Web","Noto Sans TC"; 
+	font-size: 16px;
+	padding: 0 !important;
+}
+main{
+	padding-top: 110px;
+	@media(max-width:991px){
+		padding-top: 70px;
+	}
+}
+img{
+	max-width: 100%; 
+}
+a{
+	transition: color .3s;
+}
+input,button{
+	outline: 0;
+	
+}
+input{
+	padding: 0;
+	border: 0;
+	background: transparent; 
+	-webkit-appearance: none;
+}
+textarea{
+	border:0;
+	outline:0;
+	-webkit-appearance: none;
+}
+button{
+	border:0;
+	background: transparent;
+}
+ul{
+	padding: 0;
+	margin: 0;
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+  color: #B2B2B2;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: #B2B2B2;
+}
+
+::-o-placeholder { /* Mozilla Firefox 19+ */
+  color: #B2B2B2;
+}
+
+::-ms-placeholder { /* Internet Explorer 10+ */
+  color: #B2B2B2;
+}
+
+::-ms-input-placeholder { /* Internet Explorer 10+ */
+  color: #B2B2B2;
+}
+[class^="icon-"]:before, [class*=" icon-"]:before{
+	width: auto;
+}
+@media (prefers-reduced-motion: no-preference){
+	:root {
+		scroll-behavior: initial;
+	}
+}

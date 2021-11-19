@@ -1,0 +1,17 @@
+#search{
+    .dec{
+        right: -22px;
+        bottom: 10px;
+        width: 16%;
+    }
+    @media(max-width:1399px){
+        .dec{
+            right: 0px;
+        }
+    }
+    @media(max-width:1199px){
+        .dec{
+            bottom: -60px;
+        }
+    }
+}
